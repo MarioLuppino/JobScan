@@ -62,8 +62,7 @@ This plugin's skills use those names. Claude Code loads user-global skills (`~/.
 project, so if you already run personal skills with the same names, installing this plugin will create a
 **name collision** and the generic plugin versions may trigger instead of yours. If that's you (e.g. you built
 this plugin *from* an existing personal routine), don't install it into the environment that runs your real
-search — your personal skills are the production system; this plugin is for distributing the methodology to
-others. To trial the plugin without disturbing a live routine, install it in an isolated project just long
+search — your personal skills are the production system. To trial the plugin without disturbing a live routine, install it in an isolated project just long
 enough to confirm it loads, or fork it and rename the skills.
 
 ## Privacy
