@@ -10,10 +10,15 @@ description: >-
 
 # Job Search (weekly scanner)
 
-This skill finds jobs; **`job-applications`** assesses and drafts. First read the user's compressed profile
-digest at **`<jobscan-data>/profile-core.md`** (the data path is set during onboarding; default
-`~/.claude/jobscan-data/`). Open the full `profile.md` only when the digest lacks a detail. If no profile
-exists yet, tell the user to run **`jobscan-onboarding`** first.
+This skill finds jobs; **`job-applications`** assesses and drafts.
+
+**Resolve paths first.** Read the config at the fixed location **`~/.claude/jobscan-data/jobscan-config.md`**
+— it holds `data_path` (where personal files live) and `archive_path` (where application folders, digests,
+and `Applied Index.md` live). Throughout this skill, `<jobscan-data>` and `<archive>` mean those values. If
+the config is missing, tell the user to run **`jobscan-onboarding`** first and stop (don't guess paths).
+
+Then read the user's compressed profile digest at **`<jobscan-data>/profile-core.md`**. Open the full
+`profile.md` only when the digest lacks a detail.
 
 ## Hard rules (do not violate)
 

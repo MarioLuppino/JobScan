@@ -18,8 +18,10 @@ researcher") when the user's real value is broader (data analysis, program manag
 
 ## Reference files
 
-The user's personal files live at **`<jobscan-data>/`** (set during onboarding; default
-`~/.claude/jobscan-data/`). The methodology files below ship with the plugin under `references/`.
+**Resolve paths first.** Read the config at the fixed location **`~/.claude/jobscan-data/jobscan-config.md`**
+for `data_path` and `archive_path`; `<jobscan-data>` and `<archive>` below mean those values. If it's
+missing, tell the user to run **`jobscan-onboarding`** first. The methodology files (`references/…`) ship
+with the plugin; the user's personal files live at `<jobscan-data>/`.
 
 - **`<jobscan-data>/profile-core.md`** — compressed ~1-page profile digest. **Read this by default** at the
   start of any task; it holds what fit assessment and competency mapping need.

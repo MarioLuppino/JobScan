@@ -14,15 +14,18 @@ Turn a new user into a working JobScan setup. You conduct the interview, then **
 from templates** — never leave them a blank profile. Ask questions conversationally, a few at a time; don't
 dump all 44 at once. Flag any answer missing a number and ask a follow-up rather than inventing one.
 
-## Step 1 — Choose paths
+## Step 1 — Choose paths and write the config
 
-Ask two things and record them:
+Ask two things:
 - **Data path** (where personal files live) — default `~/.claude/jobscan-data/`.
 - **Archive path** (where application folders + digests + the applied index live) — e.g. their existing
   applications folder.
 
-Confirm the skills should read these paths. (If the runtime supports it, note them so future runs don't
-re-ask.)
+**Write `~/.claude/jobscan-data/jobscan-config.md`** (a FIXED, discoverable location — the `job-search` and
+`job-applications` skills read it first to resolve `<jobscan-data>` and `<archive>` on every run) from
+`references/templates/jobscan-config.template.md`, filling in both paths. This is what lets a later scan find
+a non-default archive. The data path may differ from the config's own folder, but the config file itself
+always lives at `~/.claude/jobscan-data/jobscan-config.md` so it's always findable.
 
 ## Step 2 — Interview
 
@@ -51,8 +54,9 @@ these filled files** (they're the user's private data):
    stable content (contact, education, publications, certs, core skills, experience bullets) and leave the
    `⟪TAILOR⟫` slots. Drop any tier the user won't use.
 4. **`cover-letter-voice.md`** — from `cover-letter-voice.template.md`. If the user has past letters that
-   landed interviews, reverse-engineer their real voice; otherwise draft a first version from
-   `references/writing-playbook.md` and mark it living.
+   landed interviews, reverse-engineer their real voice; otherwise draft a first version using the
+   drafting mechanics in the **`job-applications` skill's `references/writing-playbook.md`** (sibling skill in
+   this plugin) and mark it living.
 
 ## Step 4 — Set up the archive
 
