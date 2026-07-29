@@ -82,4 +82,5 @@ career data.
 
 Improvements to the methodology (a better rule, a new source category, a workflow refinement) are commits
 others can pull. Bump the version in `plugins/jobscan/.claude-plugin/plugin.json` and
-`.claude-plugin/marketplace.json` when you cut a release.
+`.claude-plugin/marketplace.json` when you cut a release, and record the change in `CHANGELOG.md`. Keep
+version history in the changelog only — never annotate the working files with edit or version notes.

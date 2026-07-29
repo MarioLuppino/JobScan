@@ -13,8 +13,8 @@ description: >-
 
 Make applications **strategic before they're well-written.** Never open a blank résumé and summarize a career
 top-to-bottom. Start from the employer's needs, map them to real evidence, and build the documents around that
-map. Watch the failure mode where every application collapses back into one narrow identity (e.g. "just a
-researcher") when the user's real value is broader (data analysis, program management, stakeholder work).
+map. Watch the failure mode where every application collapses back into one narrow identity when the user's
+real value is broader than their headline discipline.
 
 ## Reference files
 

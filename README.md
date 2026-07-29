@@ -5,9 +5,9 @@ Code](https://claude.com/claude-code), packaged as a plugin. It finds live job p
 for, scores and ranks them into a digest, and — on your selection — drafts ATS-safe tailored résumés and
 cover letters. It **prepares packets; it never submits applications.**
 
-Built for research-to-industry transitions (it began as an entomology PhD's job search) but designed to adapt
-to any field — mycology, plant pathology, data science, ecology, whatever your profile is. A guided
-onboarding skill interviews you and builds your candidate profile, so you don't start from a blank file.
+Built for research-to-industry transitions and designed to adapt to any field — plant pathology, data
+science, ecology, whatever your profile is. A guided onboarding skill interviews you and builds your candidate
+profile, so you don't start from a blank file.
 
 ## What's in the box
 

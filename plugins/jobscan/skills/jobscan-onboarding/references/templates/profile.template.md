@@ -16,7 +16,7 @@ accomplishment, metric, or phrasing that worked, add it.
 >   résumés unaffected.
 
 **Contact (use verbatim on all materials):** {{CITY_STATE}} · {{EMAIL}} · {{PHONE}} · {{LINKEDIN}}
-{{CONTACT_NOTES — e.g. which city to use, any employer-line conventions}}
+{{CONTACT_NOTES — any conventions for the city or employer lines}}
 
 ## 1. Positioning summary
 {{ONE_PARAGRAPH: who they are, the transition they're making, and the strongest general positioning in

@@ -1,7 +1,7 @@
 {
   "name": "jobscan",
   "version": "0.1.0",
-  "description": "Weekly job scanner + tailored application drafter. Two cooperating skills (find/rank, then map/draft) plus a guided onboarding skill that builds your candidate profile. Field-agnostic: entomology, mycology, or any research-to-industry transition. Prepares packets; never submits.",
+  "description": "Weekly job scanner + tailored application drafter. Two cooperating skills (find/rank, then map/draft) plus a guided onboarding skill that builds your candidate profile. Field-agnostic; works for any research-to-industry transition. Prepares packets; never submits.",
   "author": {
     "name": "Mario Luppino"
   },

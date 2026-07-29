@@ -8,8 +8,8 @@ block. Always include the apply link inline in the chat summary too.
 ```
 # Job Search Digest — <YYYY-MM-DD>
 
-Scanned: <categories/sites covered>. Verification: <tooling used; note any fallback, e.g. "Firecrawl key not
-configured — dynamic portals spot-checked via browser only">. Fits at or above the fit floor: <count>.
+Scanned: <categories/sites covered>. Verification: <tooling used; note any fallback>. Fits at or above the
+fit floor: <count>.
 ```
 
 ## Ranked table

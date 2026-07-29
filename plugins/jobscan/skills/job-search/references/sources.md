@@ -23,9 +23,9 @@ For each category, onboarding records: the boards/URLs, any API pattern, and the
 ## Search-term coverage (standing rule)
 
 Run the **full core keyword set** against every site that supports keyword search — not a different subset per
-site. Some terms are **asymmetric** (searching one does not surface postings titled with the other), so run
-each as its own query. Onboarding lists your asymmetric pairs (e.g. for entomology: "entomology" AND
-"entomologist"; for mycology you might need "mycology" / "mycologist" / "plant pathology" separately).
+site. Some terms are **asymmetric**: searching one does not surface postings titled with the other, so run
+each as its own query. Onboarding records the user's asymmetric keyword pairs; treat each member as a separate
+required query.
 
 ## Split quota (standing rule, if set)
 

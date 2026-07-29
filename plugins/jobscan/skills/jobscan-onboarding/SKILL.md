@@ -18,8 +18,7 @@ dump all 44 at once. Flag any answer missing a number and ask a follow-up rather
 
 Ask two things:
 - **Data path** (where personal files live) — default `~/.claude/jobscan-data/`.
-- **Archive path** (where application folders + digests + the applied index live) — e.g. their existing
-  applications folder.
+- **Archive path** (where application folders, digests, and the applied index live).
 
 **Write `~/.claude/jobscan-data/jobscan-config.md`** (a FIXED, discoverable location — the `job-search` and
 `job-applications` skills read it first to resolve `<jobscan-data>` and `<archive>` on every run) from
