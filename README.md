@@ -56,6 +56,16 @@ Run my weekly job search
   path works (pandoc, the Claude `docx` skill, R's `officer` package, or Word/Docs).
 - **A scheduler** — to run the scan weekly unattended.
 
+## Already have skills named `job-search` / `job-applications`?
+
+This plugin's skills use those names. Claude Code loads user-global skills (`~/.claude/skills/`) in every
+project, so if you already run personal skills with the same names, installing this plugin will create a
+**name collision** and the generic plugin versions may trigger instead of yours. If that's you (e.g. you built
+this plugin *from* an existing personal routine), don't install it into the environment that runs your real
+search — your personal skills are the production system; this plugin is for distributing the methodology to
+others. To trial the plugin without disturbing a live routine, install it in an isolated project just long
+enough to confirm it loads, or fork it and rename the skills.
+
 ## Privacy
 
 **This repo ships methodology only.** Your real profile, résumés, digests, and application archive are
