@@ -14,5 +14,10 @@
     "ats",
     "career",
     "automation"
+  ],
+  "skills": [
+    "./skills/job-search",
+    "./skills/job-applications",
+    "./skills/jobscan-onboarding"
   ]
 }

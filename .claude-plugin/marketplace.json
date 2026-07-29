@@ -1,17 +1,19 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "jobscan",
+  "description": "A reusable, field-agnostic weekly job-scan + tailored-application system for Claude Code.",
   "owner": {
     "name": "Mario Luppino"
-  },
-  "metadata": {
-    "description": "A reusable, field-agnostic weekly job-scan + tailored-application system for Claude Code.",
-    "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "jobscan",
-      "source": "./plugins/jobscan",
-      "description": "Weekly job scanner + tailored resume/cover-letter drafter. Finds live postings, scores fit, ranks a digest, then builds ATS-safe application packets on selection. Prepares, never submits."
+      "description": "Weekly job scanner + tailored resume/cover-letter drafter. Finds live postings, scores fit, ranks a digest, then builds ATS-safe application packets on selection. Prepares, never submits.",
+      "author": {
+        "name": "Mario Luppino"
+      },
+      "category": "productivity",
+      "source": "./plugins/jobscan"
     }
   ]
 }
