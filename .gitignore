@@ -1,0 +1,26 @@
+# ─── NEVER COMMIT PERSONAL CAREER DATA ───────────────────────────────────────
+# This repo ships the METHODOLOGY only. A user's real profile, résumés, digests,
+# and application archive are generated LOCALLY by the onboarding skill and must
+# stay out of version control. These patterns catch the generated (non-.template)
+# personal files if anyone runs the system from inside a clone.
+
+# Filled candidate data (templates end in .template.md and ARE committed)
+**/profile.md
+**/profile-core.md
+**/cover-letter-voice.md
+**/base-resumes/*.md
+!**/base-resumes/README.md
+!**/base-resumes/*.template.md
+
+# Generated user data / archive
+Applied Index.md
+/user-data/
+**/Job Search Digests/
+[0-9]*/                 # numbered application folders
+*.docx
+
+# Local Claude / editor / OS noise
+.claude/settings.local.json
+.DS_Store
+Thumbs.db
+*.log
