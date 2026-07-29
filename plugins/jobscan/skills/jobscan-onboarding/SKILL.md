@@ -61,8 +61,9 @@ these filled files** (they're the user's private data):
 ## Step 4 — Set up the archive
 
 In the archive path, create **`Applied Index.md`** from `references/templates/Applied Index.template.md`
-(header only, or backfilled from existing folder names if the user already has application folders) and a
-`Job Search Digests/` folder.
+(header only, or backfilled from existing folder names if the user already has application folders),
+**`Considered - Not Pursued.md`** from its template (the do-not-resurface list for roles seen and passed on),
+and a `Job Search Digests/` folder.
 
 ## Step 5 — Field-specific search config
 
@@ -72,9 +73,11 @@ asymmetric-keyword pairs that must both be searched.
 
 ## Step 6 — Confirm tooling & finish
 
-Confirm: Skills feature available; Firecrawl connected (or note the fallback); Markdown→docx path chosen;
-scheduler wanted (if so, point them at the schedule setup). Then summarize what was created and tell them to
-run **"run my weekly job search"**.
+Confirm: Skills feature available; Firecrawl connected (or note the fallback); Markdown→docx path chosen
+(see the `job-applications` skill's `references/docx-generation.md`); scheduler wanted (if so, register the
+weekly task from `references/templates/weekly-scan-task.template.md` — see the `job-search` skill's
+`references/scheduling.md`). Then summarize what was created and tell them to run **"run my weekly job
+search"**.
 
 **Privacy reminder:** everything generated in Steps 3–4 is personal career data. If the user is working
 inside a clone of the repo, confirm `.gitignore` is excluding it. Never commit a filled profile, résumé,

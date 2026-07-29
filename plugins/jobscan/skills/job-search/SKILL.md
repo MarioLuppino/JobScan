@@ -38,10 +38,13 @@ Then read the user's compressed profile digest at **`<jobscan-data>/profile-core
   title + open state counts as `VERIFIED-LIVE`. Fall back to **browser tools** if firecrawl is blocked. If
   neither confirms, leave `UNVERIFIED` and say so. (No Firecrawl key → note it once and use built-in
   fetch/search + browser tools.)
-- **No duplicates.** Before finalizing the digest and again at the pre-draft gate, screen every candidate
-  against **`<archive>/Applied Index.md`** (the append-only dedup file — read this one file, not every
-  folder) plus any do-not-resurface list. Exact/near-exact employer+role match → exclude. Same employer,
-  adjacent role → surface once as a possible duplicate and let the user decide.
+- **No duplicates / no resurfacing.** Before finalizing the digest and again at the pre-draft gate, screen
+  every candidate against **two** files in `<archive>`: **`Applied Index.md`** (packets already built) and
+  **`Considered - Not Pursued.md`** (roles seen and passed on). Read these two files, not every folder.
+  Exact/near-exact employer+role match in either → exclude. Same employer, adjacent role → surface once as a
+  possible duplicate and let the user decide. When the user tells you to drop a listing, or reviews a digest
+  role and skips it, **append a row to `Considered - Not Pursued.md`** (`Employer | Role | Reason | Date |
+  Permanent?`) so it doesn't reappear next scan.
 - **Hard gates (encode the user's from onboarding):** work-authorization/sponsorship logic; salary floor
   (+ higher relocation floor + any government pay-grade floor); location/political-lean handling; the fit
   floor (exclude anything below the chosen score); and the avoid-list (sectors that consistently don't work
@@ -109,4 +112,5 @@ numbered archive and invoke `job-applications`.
 
 On schedule or on request: run scan → score → rank → write digest → notify with the top matches + apply
 links inline + the digest location. If genuine fits fall short of the target count after a real search
-effort, report fewer and say so — never lower the bar.
+effort, report fewer and say so — never lower the bar. To automate the weekly run, see
+`references/scheduling.md`.

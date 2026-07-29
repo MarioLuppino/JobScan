@@ -67,8 +67,9 @@ never overrides the fit assessment, competency mapping, or honest gap-naming bel
 
 ## Output & filing
 
-Draft/iterate in Markdown, then render to **ATS-safe `.docx`** via your Markdown→docx path (pandoc, the
-`docx` skill, R `officer`, or Word/Docs) using single-column, standard-heading rules. File each application as
+Draft/iterate in Markdown, then render to **ATS-safe `.docx`** — see `references/docx-generation.md` for the
+recommended paths (the `docx` skill by default; an R `officer` script or pandoc as alternatives) and the
+single-column, standard-heading rules. File each application as
 a numbered folder `<archive>/<N> <Job Title>/` (N = highest existing + 1, ignore year folders) containing the
 résumé, cover letter, `Job Posting.md`, `NOTES.txt`, and (only for no-sponsorship ideal fits) an outreach
 email. **Then append one row to `<archive>/Applied Index.md`** (`N | Employer | Role | Status | Filed | Fit`)
